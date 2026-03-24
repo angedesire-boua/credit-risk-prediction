@@ -23,17 +23,17 @@ L’objectif est d’aider les institutions financières à prendre des décisio
 
 Dataset simulé représentant des clients bancaires avec les variables suivantes :
 
-- Age
-- Income (revenu annuel)
-- CreditScore
-- LoanAmount
-- LoanDuration
-- ExistingLoans
-- Balance
-- JobType
-- MaritalStatus
-- HomeOwner
-- Default (variable cible)
+- Age  
+- Income (revenu annuel)  
+- CreditScore  
+- LoanAmount  
+- LoanDuration  
+- ExistingLoans  
+- Balance  
+- JobType  
+- MaritalStatus  
+- HomeOwner  
+- Default (variable cible)  
 
 ---
 
@@ -48,40 +48,40 @@ Création de nouvelles variables :
 
 ## 🧠 Modèles utilisés
 
-- Logistic Regression
-- Random Forest (modèle retenu)
-- MLP (réseau de neurones)
+- Logistic Regression  
+- Random Forest ✅ (modèle retenu)  
+- MLP (réseau de neurones)  
 
 ---
 
 ## 📈 Résultats
 
-- Accuracy ≈ 0.98 - 0.99  
+- Accuracy ≈ 0.98 – 0.99  
 - ROC-AUC ≈ 0.99  
 - Excellente capacité de classification  
 
-Le modèle Random Forest a été retenu pour sa robustesse.
+👉 Le modèle Random Forest a été retenu pour sa robustesse et sa performance.
 
 ---
 
 ## ⚠️ Optimisation du seuil (IMPORTANT)
 
-Par défaut, le seuil est 0.5.  
+Par défaut, le seuil de décision est 0.5.  
 Nous avons testé plusieurs seuils :
 
 | Seuil | Faux négatifs (risque) | Faux positifs |
-
-| 0.3 | 0 | 19 |
-| 0.4 | 2 | 19 |
-| 0.5 | 7 | 17 |
-| 0.6 | 12 | 10 |
+|------:|------------------------:|--------------:|
+| 0.3   | 0                       | 19            |
+| 0.4   | 2                       | 19            |
+| 0.5   | 7                       | 17            |
+| 0.6   | 12                      | 10            |
 
 ### 🎯 Conclusion métier
 
 - Faux négatif = perte financière 💣  
 - Faux positif = opportunité manquée  
 
-Le seuil **0.4** est optimal :
+👉 Le seuil **0.4** représente le meilleur compromis :
 
 - minimise les pertes
 - maintient un bon équilibre
@@ -103,41 +103,30 @@ L’application permet :
 
 ---
 
-## Technologies
+## 🖼️ Aperçu de l’application
 
-- Python
-- Pandas
-- Scikit-learn
-- Matplotlib / Seaborn
-- Streamlit
-- Joblib
+### Interface principale
 
----
+![Interface](images/app_home.png)
 
-## Compétences développées
+### Résultat de prédiction
 
-- Analyse exploratoire des données (EDA)
-- Machine Learning
-- Feature Engineering
-- Évaluation de modèles
-- Optimisation du seuil (approche métier)
-- Déploiement d’application avec Streamlit
-- Data storytelling
+![Résultat](images/app_result.png)
+
+![Résultat](images/app_result2.png)
 
 ---
 
-## Perspectives d'amélioration
+## 📁 Structure du projet
 
-- Utilisation de données réelles bancaires
-- Ajout d’explicabilité des modèles (SHAP, LIME)
-- Déploiement cloud (Streamlit Cloud, AWS)
-- Création d’une API (FastAPI)
-- Ajout de monitoring du modèle
-
----
-
-## Auteur
-
-Ange Desire Boua
-🎓 Master Big Data & Intelligence Artificiellle
-🚀 Aspiring Data Scientist
+```text
+credit-risk-prediction/
+├── app/                  # Application Streamlit
+├── data/                 # Données
+├── models/               # Modèles sauvegardés
+├── notebooks/            # Analyse exploratoire
+├── reports/figures/      # Graphiques et images
+├── src/                  # Code Python
+├── .gitignore
+├── README.md
+└── requirements.txt
