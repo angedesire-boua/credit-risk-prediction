@@ -1,6 +1,6 @@
 # 💳 Credit Risk Prediction App
 
-## 📌 Description
+##  Description
 
 Ce projet de Data Science vise à prédire le risque de défaut de paiement d’un client bancaire à partir de ses informations financières et personnelles.
 
@@ -46,15 +46,15 @@ Création de nouvelles variables :
 
 ---
 
-## 🧠 Modèles utilisés
+##  Modèles utilisés
 
 - Logistic Regression  
-- Random Forest ✅ (modèle retenu)  
+- Random Forest  (modèle retenu)  
 - MLP (réseau de neurones)  
 
 ---
 
-## 📈 Résultats
+##  Résultats
 
 - Accuracy ≈ 0.98 – 0.99  
 - ROC-AUC ≈ 0.99  
@@ -64,7 +64,7 @@ Création de nouvelles variables :
 
 ---
 
-## ⚠️ Optimisation du seuil (IMPORTANT)
+##  Optimisation du seuil (IMPORTANT)
 
 Par défaut, le seuil de décision est 0.5.  
 Nous avons testé plusieurs seuils :
@@ -78,10 +78,10 @@ Nous avons testé plusieurs seuils :
 
 ### 🎯 Conclusion métier
 
-- Faux négatif = perte financière 💣  
+- Faux négatif = perte financière   
 - Faux positif = opportunité manquée  
 
-👉 Le seuil **0.4** représente le meilleur compromis :
+Le seuil **0.4** représente le meilleur compromis :
 
 - minimise les pertes
 - maintient un bon équilibre
@@ -103,7 +103,7 @@ L’application permet :
 
 ---
 
-## 🖼️ Aperçu de l’application
+##  Aperçu de l’application
 
 ### Interface principale
 
@@ -117,7 +117,7 @@ L’application permet :
 
 ---
 
-## 📁 Structure du projet
+##  Structure du projet
 
 ```text
 credit-risk-prediction/
@@ -130,3 +130,4 @@ credit-risk-prediction/
 ├── .gitignore
 ├── README.md
 └── requirements.txt
+
