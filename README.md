@@ -67,7 +67,7 @@ Création de nouvelles variables :
 ##  Optimisation du seuil (IMPORTANT)
 
 Par défaut, le seuil de décision est 0.5.  
-Nous avons testé plusieurs seuils :
+J'ai testé plusieurs seuils :
 
 | Seuil | Faux négatifs (risque) | Faux positifs |
 |------:|------------------------:|--------------:|
